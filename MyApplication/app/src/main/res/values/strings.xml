@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">MyApplication</string>
-    <string name="fight">Fight!</string>
-    <string name="pokemonBackground">PokemonBackground</string>
-    <string name="fightBtnDescription">fightButton</string>
+    <string name="app_name">My Application</string>
+    <string name="second_page">Choose your challenger!</string>
 </resources>
