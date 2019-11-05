@@ -19,17 +19,14 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSecondActivity();
+                goToUsername();
             }
 
         });
     }
 
-    private void goToSecondActivity() {
-        Intent intent = new Intent(this, secondActivity.class);
+    private void goToUsername() {
+        Intent intent = new Intent(this, userName.class);
         startActivity(intent);
     }
-
-
-
 }
