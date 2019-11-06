@@ -23,7 +23,6 @@ public class userName extends AppCompatActivity {
         et = (EditText) findViewById(R.id.userNameInput);
         btn  = (Button)findViewById(R.id.continueTeam);
 
-
         et.addTextChangedListener(new TextWatcher() {
 
             public void onTextChanged(CharSequence s, int start, int before, int count) { }

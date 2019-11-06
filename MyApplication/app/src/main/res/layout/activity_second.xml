@@ -1,38 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".secondActivity"
-    android:background="@drawable/wp4">
+    android:background="@drawable/wp5"
+    tools:context=".secondActivity">
+
 
     <TextView
         android:id="@+id/txt2"
-        android:layout_width="match_parent"
-        android:layout_height="193dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="44dp"
         android:text="@string/second_page"
         android:textColor="@android:color/white"
         android:textSize="80px"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/mid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="412dp"
+        android:layout_height="512dp"
+        android:layout_marginTop="145dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/rectanglebox"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:src="@drawable/platapus" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/rectanglebox"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:src="@drawable/platapus" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/rectanglebox"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:src="@drawable/platapus" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/rectanglebox"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:src="@drawable/platapus" />
+        </RelativeLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/top"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_weight="0"
-        android:text="@string/second_page"
-        android:textColor="@android:color/white" />
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
