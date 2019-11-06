@@ -2,4 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="second_page">Choose your Pokemon!</string>
     <string name="userName">Please Enter a Username</string>
+    <string name="fightBtn">Fight!</string>
+    <string name="pokemonTextDescription">Pokemon text</string>
 </resources>
