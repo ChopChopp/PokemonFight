@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/wp2"
     android:orientation="horizontal"
-    tools:context=".userName"
+    tools:context=".UserName"
     tools:deviceIds="wear">
 
 

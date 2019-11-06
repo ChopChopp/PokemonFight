@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class userName extends AppCompatActivity {
+public class UserName extends AppCompatActivity {
 
     EditText et;
     Button btn;
@@ -46,7 +46,7 @@ public class userName extends AppCompatActivity {
     }
 
     private void goToSecond() {
-        Intent intent = new Intent(this, secondActivity.class);
+        Intent intent = new Intent(this, ChoosePokemon.class);
         startActivity(intent);
     }
 

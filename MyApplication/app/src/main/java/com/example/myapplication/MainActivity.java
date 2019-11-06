@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToUsername() {
-        Intent intent = new Intent(this, userName.class);
+        Intent intent = new Intent(this, UserName.class);
         startActivity(intent);
     }
 }
