@@ -1,6 +1,8 @@
 package com.example.beans;
 
-public class Move {
+import com.orm.SugarRecord;
+
+public class Move extends SugarRecord {
 
     String name;
     String type;

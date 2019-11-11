@@ -5,6 +5,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+import com.example.beans.Move;
 import com.orm.SugarContext;
 
 public class ChoosePokemon extends AppCompatActivity {
@@ -15,7 +16,8 @@ public class ChoosePokemon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_pokemon);
 
-        SugarContext.init(this);
+
+
 
     }
 }

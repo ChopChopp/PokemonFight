@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.beans.Move;
+import com.orm.SugarContext;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -14,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        SugarContext.init(this);
 
         Button btn = (Button) findViewById(R.id.fightBtn);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToUsername() {
+
         Intent intent = new Intent(this, UserName.class);
         startActivity(intent);
     }
