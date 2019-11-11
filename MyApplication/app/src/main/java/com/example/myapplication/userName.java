@@ -46,7 +46,9 @@ public class UserName extends AppCompatActivity {
     }
 
     private void goToSecond() {
-        Intent intent = new Intent(this, ChoosePokemon.class);
+//        Intent intent = new Intent(this, ChoosePokemon.class);
+//        startActivity(intent);
+        Intent intent = new Intent(this, FightActivity.class);
         startActivity(intent);
     }
 

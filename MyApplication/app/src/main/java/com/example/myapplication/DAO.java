@@ -9,9 +9,9 @@ public class DAO {
 
         Move flammenwurf = new Move("Flamethrower", "Fire", 80, "Burns the enemy", "Burn", 20);
         flammenwurf.save();
-        Move focusblast = new Move("Focusblast", "Fight", 150, "Shoots a big laserball", "Missable", 5);
+        Move focusblast = new Move("Focus blast", "Fight", 150, "Shoots a big laserball", "Missable", 5);
         focusblast.save();
-        Move solarbeam = new Move("Solarbeam", "Grass", 150, "Big Laser which solar powered", "Missable", 10);
+        Move solarbeam = new Move("Solar beam", "Grass", 150, "Big Laser which solar powered", "Missable", 10);
         solarbeam.save();
         Move airslash = new Move("Air Slash", "Flight", 70, "Shoots cool air stuff", "Crit", 20);
         airslash.save();
