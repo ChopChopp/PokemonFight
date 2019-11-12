@@ -33,21 +33,18 @@ public class FightActivity extends AppCompatActivity {
                 vibrate(move1Btn);
             }
         });
-
         move2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 vibrate(move2Btn);
             }
         });
-
         move3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 vibrate(move3Btn);
             }
         });
-
         move4Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
