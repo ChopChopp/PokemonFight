@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -74,6 +75,11 @@ public class ChoosePokemon extends AppCompatActivity {
     }
 
     public void goToFighting() {
+
+        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.battleMusic);
+
+        mediaPlayer.start();
+
         Intent intent = new Intent(this, FightActivity.class);
         startActivity(intent);
     }
