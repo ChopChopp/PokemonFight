@@ -45,7 +45,7 @@ public class ChoosePokemon extends AppCompatActivity {
             public void onClick(View v)
             {
                 goToFighting();
-            }
+            }   
         });
         cl2.setOnClickListener(new View.OnClickListener() {
             @Override
