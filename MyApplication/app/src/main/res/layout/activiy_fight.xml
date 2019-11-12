@@ -11,6 +11,7 @@
         android:id="@+id/background"
         android:layout_width="412dp"
         android:layout_height="730dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/pokemonTextDescription"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,30 +43,41 @@
         android:layout_marginStart="16dp"
 
         android:layout_marginTop="592dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/shape_changepokemon"
         android:text="Change Pokémon"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/focusBlastBtn"
+        android:id="@+id/move1Btn"
 
         android:layout_width="179dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
 
         android:layout_marginTop="516dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/shape_fightattack"
         android:text="Focus blast"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/solarBeamBtn"
+        android:id="@+id/move2Btn"
 
         android:layout_width="179dp"
         android:layout_height="55dp"
@@ -76,37 +88,52 @@
         android:text="Solar beam"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/airSlashBtn"
+        android:id="@+id/move3Btn"
 
         android:layout_width="179dp"
         android:layout_height="55dp"
         android:layout_marginStart="216dp"
 
         android:layout_marginTop="516dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/shape_flyattack"
         android:text="Air slash"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/flameThrowerBtn"
+        android:id="@+id/move4Btn"
 
         android:layout_width="179dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
 
         android:layout_marginTop="444dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/shape_fireattack"
         android:text="Flamethrower"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/background"
+        app:layout_constraintEnd_toStartOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
