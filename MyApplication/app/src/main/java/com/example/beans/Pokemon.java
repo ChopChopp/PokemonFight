@@ -2,19 +2,21 @@ package com.example.beans;
 
 import com.orm.SugarRecord;
 
+import java.util.ArrayList;
+
 public class Pokemon extends SugarRecord {
 
-    int hp;
-    int atack;
-    int defense;
-    int speed;
-    Move move1;
-    Move move2;
-    Move move3;
-    Move move4;
-    String description;
-    String name;
-    String type;
+    private int hp;
+    private int atack;
+    private int defense;
+    private int speed;
+    private Move move1;
+    private Move move2;
+    private Move move3;
+    private Move move4;
+    private String description;
+    private String name;
+    private String type;
 
     public Pokemon() {
     }

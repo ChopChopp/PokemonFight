@@ -4,14 +4,15 @@ import com.orm.SugarRecord;
 
 public class Move extends SugarRecord {
 
-    String name;
-    String type;
-    int damage;
-    String description;
-    String effect;
-    int ap;
+    private String name;
+    private String type;
+    private int damage;
+    private String description;
+    private String effect;
+    private int ap;
 
     public Move() {
+
     }
 
     public Move(String name, String type, int damage, String description, String effect, int ap) {
