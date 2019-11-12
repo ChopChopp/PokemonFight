@@ -25,13 +25,40 @@
         android:src="@drawable/charizard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifOwn2"
+        android:layout_width="244dp"
+        android:layout_height="429dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/greninja"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifOwn3"
+        android:layout_width="244dp"
+        android:layout_height="429dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/sceptile"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifOwn4"
+        android:layout_width="244dp"
+        android:layout_height="429dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/luxray"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifOpponent"
         android:layout_width="170dp"
         android:layout_height="371dp"
         android:layout_marginStart="224dp"
-        android:src="@drawable/greninja"
+        android:src="@drawable/greninja_foe"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

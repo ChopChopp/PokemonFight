@@ -27,7 +27,7 @@ public class ChoosePokemon extends AppCompatActivity {
         TextView pokemonName3 = findViewById(R.id.pokemonName3);
         TextView pokemonName4 = findViewById(R.id.pokemonName4);
 
-        List<Pokemon> pkmnlist = Pokemon.listAll(Pokemon.class);
+        final List<Pokemon> pkmnlist = Pokemon.listAll(Pokemon.class);
 
         pokemonName1.setText(pkmnlist.get(0).getName());
         pokemonName2.setText(pkmnlist.get(1).getName());
@@ -45,28 +45,28 @@ public class ChoosePokemon extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                goToFighting();
+                goToFighting(pkmnlist.get(0).getId());
             }   
         });
         cl2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                goToFighting();
+                goToFighting( pkmnlist.get(0).getId());
             }
         });
         cl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                goToFighting();
+                goToFighting( pkmnlist.get(0).getId());
             }
         });
         cl4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                goToFighting();
+                goToFighting(pkmnlist.get(0).getId());
             }
         });
 
@@ -74,13 +74,14 @@ public class ChoosePokemon extends AppCompatActivity {
 
     }
 
-    public void goToFighting() {
+    public void goToFighting(long id) {
 
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.battleMusic);
+        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.battlemusic);
 
         mediaPlayer.start();
 
         Intent intent = new Intent(this, FightActivity.class);
         startActivity(intent);
+        intent.putExtra("id", id);
     }
 }
