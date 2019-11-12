@@ -92,17 +92,15 @@ public class FightActivity extends AppCompatActivity {
 
         final Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 
-        final long[] pattern = {2000, 1000}; // sleep for 2000 milliseconds and vibrate for 1000 milliseconds
+        final long[] pattern = {0, 200}; // sleep for 2000 milliseconds and vibrate for 1000 milliseconds
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                assert vibrator != null;
                 if (vibrator != null) {
-                    vibrator.vibrate(pattern, 0); // 0 means repeat forever, -1 not repeat
+                    vibrator.vibrate(pattern, -1); // 0 means repeat forever, -1 not repeat
                     System.err.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA IS VIBRATING");
                 }
-//              Toast.makeText(FightActivity.this, "Started", Toast.LENGTH_SHORT).show();
                 System.err.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA IS NOT VIBRATING");
             }
         });

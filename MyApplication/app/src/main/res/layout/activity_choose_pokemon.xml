@@ -22,22 +22,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout7"
-        android:layout_width="413dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="166dp"
-        android:layout_marginBottom="430dp"
-        android:background="@drawable/rectanglebox"
+        android:id="@+id/charizardLayout"
+        android:layout_width="397dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_pokemon1"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/greninjaLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="122dp"
-            android:layout_height="97dp"
+            android:layout_width="111dp"
+            android:layout_height="71dp"
             android:layout_marginStart="17dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="285dp"
@@ -46,8 +47,10 @@
             android:src="@drawable/charizard_prof"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.687"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/pokemonName1"
@@ -67,64 +70,64 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout4"
-        android:layout_width="413dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="426dp"
-        android:layout_marginBottom="170dp"
-        android:background="@drawable/rectanglebox"
+        android:id="@+id/luxrayLayout"
+        android:layout_width="397dp"
+        android:layout_height="114dp"
+        android:background="@drawable/background_pokemon1"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.943">
 
         <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="122dp"
-            android:layout_height="97dp"
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="285dp"
-            android:layout_marginBottom="27dp"
+            android:id="@+id/imageView6"
+            android:layout_width="125dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="284dp"
+            android:layout_marginBottom="23dp"
             android:layout_weight="25"
-            android:src="@drawable/sceptile_prof"
+            android:src="@drawable/luxray_prof"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.21" />
 
         <TextView
-            android:id="@+id/pokemonName3"
+            android:id="@+id/pokemonName4"
             android:layout_width="163dp"
             android:layout_height="59dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="113dp"
-            android:layout_marginBottom="56dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="54dp"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout6"
-        android:layout_width="413dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="298dp"
-        android:layout_marginBottom="298dp"
-        android:background="@drawable/rectanglebox"
+        android:id="@+id/greninjaLayout"
+        android:layout_width="397dp"
+        android:layout_height="114dp"
+        android:background="@drawable/background_pokemon1"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/sceptileLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -138,8 +141,10 @@
             android:src="@drawable/greninja_prof"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.315" />
 
         <TextView
             android:id="@+id/pokemonName2"
@@ -159,44 +164,48 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout5"
-        android:layout_width="413dp"
-        android:layout_height="125dp"
-        android:background="@drawable/rectanglebox"
+        android:id="@+id/sceptileLayout"
+        android:layout_width="397dp"
+        android:layout_height="114dp"
+        android:background="@drawable/background_pokemon1"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/luxrayLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageView5"
             android:layout_width="122dp"
             android:layout_height="97dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="284dp"
-            android:layout_marginBottom="23dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="285dp"
+            android:layout_marginBottom="27dp"
             android:layout_weight="25"
-            android:src="@drawable/luxray_prof"
+            android:src="@drawable/sceptile_prof"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/pokemonName4"
+            android:id="@+id/pokemonName3"
             android:layout_width="163dp"
             android:layout_height="59dp"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="106dp"
-            android:layout_marginBottom="54dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="113dp"
+            android:layout_marginBottom="56dp"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
