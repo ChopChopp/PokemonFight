@@ -99,8 +99,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/ChoosePokemon.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="64" column="59" lean-forward="true" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+                <state relative-caret-position="-79">
+                  <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1482#1645#0" expanded="true" />
@@ -109,6 +109,7 @@
                     <element signature="e#1895#1896#0" expanded="true" />
                     <element signature="e#1930#2116#0" expanded="true" />
                     <element signature="e#2115#2116#0" expanded="true" />
+                    <element signature="e#2146#2331#0" expanded="true" />
                     <element signature="e#2330#2331#0" expanded="true" />
                   </folding>
                 </state>
@@ -118,21 +119,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/FightActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+                <state relative-caret-position="523">
+                  <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
                   <folding>
-                    <element signature="e#2200#2354#0" expanded="true" />
-                    <element signature="e#2353#2354#0" expanded="true" />
-                    <element signature="e#2393#2547#0" expanded="true" />
-                    <element signature="e#2546#2547#0" expanded="true" />
-                    <element signature="e#2586#2740#0" expanded="true" />
-                    <element signature="e#2739#2740#0" expanded="true" />
-                    <element signature="e#2779#2933#0" expanded="true" />
-                    <element signature="e#2932#2933#0" expanded="true" />
-                    <element signature="e#2976#3788#0" expanded="true" />
-                    <element signature="e#3787#3788#0" expanded="true" />
-                    <element signature="e#2794#3063#0" expanded="true" />
-                    <element signature="e#3062#3063#0" expanded="true" />
+                    <element signature="e#4594#4863#0" expanded="true" />
+                    <element signature="e#4862#4863#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -181,7 +172,7 @@
               <provider editor-type-id="android-manifest" />
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="338">
-                  <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+                  <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -205,8 +196,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/DAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
-                  <caret line="70" column="128" selection-start-line="70" selection-start-column="122" selection-end-line="70" selection-end-column="128" />
+                <state relative-caret-position="383">
+                  <caret line="69" column="131" selection-start-line="69" selection-start-column="123" selection-end-line="69" selection-end-column="131" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -276,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1211" />
     <option name="y" value="271" />
     <option name="width" value="1040" />
@@ -755,7 +746,7 @@
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -783,6 +774,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="67" column="135" selection-start-line="67" selection-start-column="126" selection-end-line="67" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activiy_fight.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -796,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/ChoosePokemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="64" column="59" lean-forward="true" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+        <state relative-caret-position="-79">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1482#1645#0" expanded="true" />
@@ -806,38 +807,19 @@
             <element signature="e#1895#1896#0" expanded="true" />
             <element signature="e#1930#2116#0" expanded="true" />
             <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2146#2331#0" expanded="true" />
             <element signature="e#2330#2331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="67" column="135" selection-start-line="67" selection-start-column="126" selection-end-line="67" selection-end-column="135" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapplication/FightActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="523">
+          <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
           <folding>
-            <element signature="e#2200#2354#0" expanded="true" />
-            <element signature="e#2353#2354#0" expanded="true" />
-            <element signature="e#2393#2547#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2586#2740#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2779#2933#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
-            <element signature="e#2976#3788#0" expanded="true" />
-            <element signature="e#3787#3788#0" expanded="true" />
-            <element signature="e#2794#3063#0" expanded="true" />
-            <element signature="e#3062#3063#0" expanded="true" />
+            <element signature="e#4594#4863#0" expanded="true" />
+            <element signature="e#4862#4863#0" expanded="true" />
           </folding>
         </state>
       </provider>

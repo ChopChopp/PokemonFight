@@ -7,10 +7,14 @@ import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.beans.Pokemon;
 import com.orm.SugarContext;
+
+import java.util.List;
 
 import pl.droidsonroids.gif.GifImageView;
 
@@ -26,8 +30,7 @@ public class FightActivity extends AppCompatActivity {
     private GifImageView ownGif2;
     private GifImageView ownGif3;
     private GifImageView ownGif4;
-
-
+    private TextView ownName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,20 +45,30 @@ public class FightActivity extends AppCompatActivity {
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
         final int[] currentMusicPosition = new int[1];
+        final List<Pokemon> pkmnlist = Pokemon.listAll(Pokemon.class);
 
         ownGif = findViewById(R.id.gifOwn);
         ownGif2 = findViewById(R.id.gifOwn2);
         ownGif3 = findViewById(R.id.gifOwn3);
         ownGif4 = findViewById(R.id.gifOwn4);
+        ownName = findViewById(R.id.pokemonNameOwn);
 
-            if( name.equals("Charizard"))
+            if( name.equals("Charizard")) {
                 ownGif.setVisibility(View.VISIBLE);
-            else if ( name.equals("Greninja"))
+                ownName.setText(pkmnlist.get(0).getName());
+            }
+            else if ( name.equals("Greninja")){
                 ownGif2.setVisibility(View.VISIBLE);
-            else if ( name.equals("Sceptile"))
+                ownName.setText(pkmnlist.get(1).getName());
+            }
+            else if ( name.equals("Sceptile")) {
                 ownGif3.setVisibility(View.VISIBLE);
-            else if ( name.equals("Luxray"))
+                ownName.setText(pkmnlist.get(2).getName());
+            }
+            else if ( name.equals("Luxray")) {
                 ownGif4.setVisibility(View.VISIBLE);
+                ownName.setText(pkmnlist.get(3).getName());
+            }
             else
                 System.out.println("Why");
 
