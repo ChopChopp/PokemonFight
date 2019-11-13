@@ -50,7 +50,6 @@ public class UserName extends AppCompatActivity {
         Intent intent = new Intent(this, ChoosePokemon.class);
         intent.putExtra("user", user);
         startActivity(intent);
-        System.out.println(username);
     }
 
 }

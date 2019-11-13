@@ -29,7 +29,6 @@ public class ChoosePokemon extends AppCompatActivity {
         else
             name=null;
 
-        System.out.println("Username: " + name);
 
         TextView pokemonName1 = findViewById(R.id.pokemonName1);
         TextView pokemonName2 = findViewById(R.id.pokemonName2);
@@ -83,7 +82,6 @@ public class ChoosePokemon extends AppCompatActivity {
     public void goToFighting(String name) {
         Intent intent = new Intent(this, FightActivity.class);
         intent.putExtra("name", name);
-        System.out.println("The Id is: " +intent.getExtras());
         startActivity(intent);
     }
 }

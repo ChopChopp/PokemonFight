@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.beans.Move;
 import com.example.beans.Pokemon;
 import com.orm.SugarContext;
 
@@ -81,10 +80,6 @@ public class FightActivity extends AppCompatActivity {
 
         switchPkmn = findViewById(R.id.changePokemonBtn);
 
-        for (Pokemon p : pkmnlist) {
-            System.out.println(p.getMove1().getName());
-            System.out.println(p.getId());
-        }
 
         if (name.equals("Charizard")) {
             ownGif.setVisibility(View.VISIBLE);
@@ -114,8 +109,7 @@ public class FightActivity extends AppCompatActivity {
             move2Btn.setText(pkmnlist.get(3).getMove2().getName());
             move3Btn.setText(pkmnlist.get(3).getMove3().getName());
             move4Btn.setText(pkmnlist.get(3).getMove4().getName());
-        } else
-            System.out.println("Why");
+        }
 
         musicToggle = findViewById(R.id.soundToggle);
         musicToggle.setBackgroundResource(R.drawable.ic_lock_ringer_on_alpha);
@@ -124,7 +118,6 @@ public class FightActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 attackOpponent(name, view, pkmnlist);
-                System.out.println("AHJDSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
                 vibrate(move1Btn);
             }
         });
@@ -165,7 +158,6 @@ public class FightActivity extends AppCompatActivity {
                     musicToggle.setBackgroundResource(R.drawable.ic_lock_ringer_off_alpha);
                     mediaPlayer.pause();
                     currentMusicPosition[0] = mediaPlayer.getCurrentPosition();
-                    System.out.println(currentMusicPosition[0]);
                     vibrate(move4Btn);
                 } else {
                     musicToggle.setBackgroundResource(R.drawable.ic_lock_ringer_on_alpha);
@@ -336,11 +328,13 @@ public class FightActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    // Method for changing default gif to attacking gif,
+    // not working yet. TODO in next update
     private void changeToAttackGif(String name) {
 
         Timer timer = new Timer();
 
-//        try {
         switch (name) {
             case "Charizard":
                 ownGif.setVisibility(View.INVISIBLE);
@@ -391,11 +385,8 @@ public class FightActivity extends AppCompatActivity {
                 attackGifLuxray.setVisibility(View.INVISIBLE);
                 break;
             default:
-                System.out.println("EEEEEEEEEEEXIT");
+                System.out.println("Failed");
         }
-//        } catch(InterruptedException e) {
-//            e.printStackTrace();
-//        }
     }
 
     public void vibrate(Button button) {
