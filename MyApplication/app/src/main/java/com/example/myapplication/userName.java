@@ -14,7 +14,7 @@ public class UserName extends AppCompatActivity {
 
     EditText et;
     Button btn;
-
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,21 +33,24 @@ public class UserName extends AppCompatActivity {
 
             public void afterTextChanged(Editable s) {
                 btn.setEnabled(true);
+                username = s.toString();
             }
         });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSecond();
+                goToSecond(username);
             }
 
         });
     }
 
-    private void goToSecond() {
+    private void goToSecond(String user) {
         Intent intent = new Intent(this, ChoosePokemon.class);
+        intent.putExtra("user", user);
         startActivity(intent);
+        System.out.println(username);
     }
 
 }

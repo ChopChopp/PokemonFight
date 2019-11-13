@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -15,17 +14,28 @@ import java.util.List;
 
 public class ChoosePokemon extends AppCompatActivity {
 
-    boolean clicked;
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_pokemon);
 
+        Intent intent = getIntent();
+        Bundle bd = intent.getExtras();
+
+        if(intent != null)
+            name=bd.getString("user");
+        else
+            name=null;
+
+        System.out.println("Username: " + name);
+
         TextView pokemonName1 = findViewById(R.id.pokemonName1);
         TextView pokemonName2 = findViewById(R.id.pokemonName2);
         TextView pokemonName3 = findViewById(R.id.pokemonName3);
         TextView pokemonName4 = findViewById(R.id.pokemonName4);
+        TextView username = findViewById(R.id.user);
 
         final List<Pokemon> pkmnlist = Pokemon.listAll(Pokemon.class);
 
@@ -33,13 +43,12 @@ public class ChoosePokemon extends AppCompatActivity {
         pokemonName2.setText(pkmnlist.get(1).getName());
         pokemonName3.setText(pkmnlist.get(2).getName());
         pokemonName4.setText(pkmnlist.get(3).getName());
+        username.setText(name);
 
         ConstraintLayout cl1 = findViewById(R.id.charizardLayout);
         ConstraintLayout cl2 = findViewById(R.id.greninjaLayout);
         ConstraintLayout cl3 = findViewById(R.id.sceptileLayout);
         ConstraintLayout cl4 = findViewById(R.id.luxrayLayout);
-
-        clicked = false;
 
         cl1.setOnClickListener(new View.OnClickListener() {
             @Override

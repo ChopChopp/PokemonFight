@@ -332,6 +332,7 @@ public class FightActivity extends AppCompatActivity {
 
     public void switchPkmn() {
         Intent intent = new Intent(this, ChoosePokemon.class);
+        intent.putExtra("name", "");
         startActivity(intent);
     }
 
