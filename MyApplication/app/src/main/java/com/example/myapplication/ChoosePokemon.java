@@ -75,13 +75,8 @@ public class ChoosePokemon extends AppCompatActivity {
     }
 
     public void goToFighting(long id) {
-
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.battlemusic);
-
-        mediaPlayer.start();
-
         Intent intent = new Intent(this, FightActivity.class);
         startActivity(intent);
-        intent.putExtra("id", id);
+//        intent.putExtra("id", id);
     }
 }
