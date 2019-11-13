@@ -4,4 +4,5 @@
     <string name="userName">Please Enter a Username</string>
     <string name="fightBtn">Fight!</string>
     <string name="pokemonTextDescription">Pokemon text</string>
+    <string name="choose_your_pokemon">Choose your Pokemon</string>
 </resources>

@@ -66,7 +66,7 @@ public class DAO {
 
     public void createPokemon() {
         Pokemon charizard = new Pokemon(1000, 120, 300, 100, flamethrower, solarbeam, focusblast, airslash, "A fire dragon", "Charizard", "Fire");
-        Pokemon greninja = new Pokemon(600, 250, 250, 400, hydropump, darkpulse, shuriken, earthquake, "A ninja frog", "Greninja", "Water");
+        Pokemon greninja = new Pokemon(1700, 250, 250, 400, hydropump, darkpulse, shuriken, earthquake, "A ninja frog", "Greninja", "Water");
         Pokemon gewaldro = new Pokemon(750, 300, 250, 250, leafstorm, leechseed, dragonpulse, poisonjab, "A leaf lizard", "Sceptile", "Leaf");
         Pokemon luxray = new Pokemon(1000, 120, 300, 100, wildcharge, superpower, facade, voltswitch, "A lighting lynx", "Luxray", "Electro");
         charizard.save();

@@ -68,10 +68,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifAttackCharizard"
+        android:layout_width="266dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/charizardattack"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifAttackGreninja"
+        android:layout_width="266dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/charizardattack"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifAttackSceptile"
+        android:layout_width="266dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/charizardattack"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifAttackLuxray"
+        android:layout_width="266dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/charizardattack"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <Button
         android:id="@+id/changePokemonBtn"
-        android:layout_width="328dp"
-        android:layout_height="44dp"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="592dp"
         android:layout_marginEnd="16dp"
@@ -90,7 +132,7 @@
         android:id="@+id/move1Btn"
         android:layout_width="154dp"
         android:layout_height="55dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="516dp"
         android:background="@drawable/shape_fightattack"
         android:textColor="#FFFFFF"
@@ -106,15 +148,13 @@
         android:id="@+id/move3Btn"
         android:layout_width="154dp"
         android:layout_height="55dp"
-        android:layout_marginStart="216dp"
         android:layout_marginTop="516dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/shape_flyattack"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -122,7 +162,7 @@
         android:id="@+id/move4Btn"
         android:layout_width="154dp"
         android:layout_height="55dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="444dp"
         android:background="@drawable/shape_fireattack"
         android:textColor="#FFFFFF"
@@ -138,15 +178,13 @@
         android:id="@+id/move2Btn"
         android:layout_width="154dp"
         android:layout_height="55dp"
-        android:layout_marginStart="216dp"
         android:layout_marginTop="444dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/shape_leafattack"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -170,10 +208,11 @@
         android:max="100"
         android:minWidth="200dp"
         android:minHeight="50dp"
-        android:progress="100"
         android:progressDrawable="@drawable/shape_progressbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!--        android:progress="100"-->
 
     <ProgressBar
         android:id="@+id/hpBarOpponent"
@@ -182,14 +221,12 @@
         android:layout_height="19dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="64dp"
         android:max="100"
         android:minWidth="200dp"
         android:minHeight="50dp"
-        android:progress="100"
         android:progressDrawable="@drawable/shape_progressbar"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -207,12 +244,12 @@
         android:id="@+id/pokemonNameOpponent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="248dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="100dp"
         android:text="Greninja"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#F7BE1010"
         android:textColorLink="#7A5656"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
