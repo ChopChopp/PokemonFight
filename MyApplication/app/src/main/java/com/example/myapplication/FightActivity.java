@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.beans.Move;
 import com.example.beans.Pokemon;
 import com.orm.SugarContext;
 
@@ -25,6 +26,7 @@ public class FightActivity extends AppCompatActivity {
     private Button move2Btn;
     private Button move3Btn;
     private Button move4Btn;
+    private Button switchPkmn;
     private ImageButton musicToggle;
     private GifImageView ownGif;
     private GifImageView ownGif2;
@@ -37,6 +39,8 @@ public class FightActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activiy_fight);
 
+        SugarContext.init(this);
+
         Intent intent = getIntent();
         Bundle bd = intent.getExtras();
         String name = bd.getString("name");
@@ -45,7 +49,7 @@ public class FightActivity extends AppCompatActivity {
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
         final int[] currentMusicPosition = new int[1];
-        final List<Pokemon> pkmnlist = Pokemon.listAll(Pokemon.class);
+        List<Pokemon> pkmnlist = Pokemon.listAll(Pokemon.class);
 
         ownGif = findViewById(R.id.gifOwn);
         ownGif2 = findViewById(R.id.gifOwn2);
@@ -53,30 +57,53 @@ public class FightActivity extends AppCompatActivity {
         ownGif4 = findViewById(R.id.gifOwn4);
         ownName = findViewById(R.id.pokemonNameOwn);
 
-            if( name.equals("Charizard")) {
-                ownGif.setVisibility(View.VISIBLE);
-                ownName.setText(pkmnlist.get(0).getName());
-            }
-            else if ( name.equals("Greninja")){
-                ownGif2.setVisibility(View.VISIBLE);
-                ownName.setText(pkmnlist.get(1).getName());
-            }
-            else if ( name.equals("Sceptile")) {
-                ownGif3.setVisibility(View.VISIBLE);
-                ownName.setText(pkmnlist.get(2).getName());
-            }
-            else if ( name.equals("Luxray")) {
-                ownGif4.setVisibility(View.VISIBLE);
-                ownName.setText(pkmnlist.get(3).getName());
-            }
-            else
-                System.out.println("Why");
-
-
         move1Btn = findViewById(R.id.move1Btn);
         move2Btn = findViewById(R.id.move2Btn);
         move3Btn = findViewById(R.id.move3Btn);
         move4Btn = findViewById(R.id.move4Btn);
+
+        switchPkmn = findViewById(R.id.changePokemonBtn);
+
+        for(Pokemon p: pkmnlist) {
+            System.out.println(p.getMove1().getName());
+            System.out.println(p.getId());
+        }
+
+            if( name.equals("Charizard")) {
+                ownGif.setVisibility(View.VISIBLE);
+                ownName.setText(pkmnlist.get(0).getName());
+                move1Btn.setText(pkmnlist.get(0).getMove1().getName());
+                move2Btn.setText(pkmnlist.get(0).getMove2().getName());
+                move3Btn.setText(pkmnlist.get(0).getMove3().getName());
+                move4Btn.setText(pkmnlist.get(0).getMove4().getName());
+            }
+            else if ( name.equals("Greninja")){
+                ownGif2.setVisibility(View.VISIBLE);
+                ownName.setText(pkmnlist.get(1).getName());
+                move1Btn.setText(pkmnlist.get(1).getMove1().getName());
+                move2Btn.setText(pkmnlist.get(1).getMove2().getName());
+                move3Btn.setText(pkmnlist.get(1).getMove3().getName());
+                move4Btn.setText(pkmnlist.get(1).getMove4().getName());
+            }
+            else if ( name.equals("Sceptile")) {
+                ownGif3.setVisibility(View.VISIBLE);
+                ownName.setText(pkmnlist.get(2).getName());
+                move1Btn.setText(pkmnlist.get(2).getMove1().getName());
+                move2Btn.setText(pkmnlist.get(2).getMove2().getName());
+                move3Btn.setText(pkmnlist.get(2).getMove3().getName());
+                move4Btn.setText(pkmnlist.get(2).getMove4().getName());
+            }
+            else if ( name.equals("Luxray")) {
+                ownGif4.setVisibility(View.VISIBLE);
+                ownName.setText(pkmnlist.get(3).getName());
+                move1Btn.setText(pkmnlist.get(3).getMove1().getName());
+                move2Btn.setText(pkmnlist.get(3).getMove2().getName());
+                move3Btn.setText(pkmnlist.get(3).getMove3().getName());
+                move4Btn.setText(pkmnlist.get(3).getMove4().getName());
+            }
+            else
+                System.out.println("Why");
+
         musicToggle = findViewById(R.id.soundToggle);
         musicToggle.setBackgroundResource(R.drawable.ic_lock_ringer_on_alpha);
 
@@ -105,6 +132,13 @@ public class FightActivity extends AppCompatActivity {
             }
         });
 
+        switchPkmn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switchPkmn();
+            }
+        });
+
         musicToggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -124,9 +158,13 @@ public class FightActivity extends AppCompatActivity {
             }
         });
 
-        SugarContext.init(this);
+
     }
 
+    public void switchPkmn() {
+        Intent intent = new Intent(this, ChoosePokemon.class);
+        startActivity(intent);
+    }
 
     public void vibrate(Button button) {
 
