@@ -22,7 +22,7 @@
         android:id="@+id/gifOwn"
         android:layout_width="244dp"
         android:layout_height="429dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="56dp"
         android:src="@drawable/charizard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -117,4 +117,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ProgressBar
+        android:id="@+id/hpBarOwn"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="162dp"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="172dp"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/shape_progressbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/hpBarOpponent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="162dp"
+        android:layout_height="19dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="56dp"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/shape_progressbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonNameOwn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="pokemonNameOwn"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokemonNameOpponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="36dp"
+        android:text="pokemonNameOpponent"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F7BE1010"
+        android:textColorLink="#7A5656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
