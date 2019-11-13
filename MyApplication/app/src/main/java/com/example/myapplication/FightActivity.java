@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -26,15 +27,16 @@ public class FightActivity extends AppCompatActivity {
     private GifImageView ownGif3;
     private GifImageView ownGif4;
 
-//    private Bundle extras = getIntent().getExtras();
-//    private int id = extras.getInt("id");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activiy_fight);
 
-
+        Intent intent = getIntent();
+        Bundle bd = intent.getExtras();
+        String name = bd.getString("name");
 
         final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.battlemusic);
         mediaPlayer.setLooping(true);
@@ -42,23 +44,21 @@ public class FightActivity extends AppCompatActivity {
         final int[] currentMusicPosition = new int[1];
 
         ownGif = findViewById(R.id.gifOwn);
-//        ownGif2 = findViewById(R.id.gifOwn2);
-//        ownGif3 = findViewById(R.id.gifOwn3);
-//        ownGif4 = findViewById(R.id.gifOwn4);
+        ownGif2 = findViewById(R.id.gifOwn2);
+        ownGif3 = findViewById(R.id.gifOwn3);
+        ownGif4 = findViewById(R.id.gifOwn4);
 
-/*        switch (id){
-            case 1:
-                ownGif2.setVisibility(View.VISIBLE);
-                ownGif.setVisibility(View.INVISIBLE);
-            case 2:
-                ownGif3.setVisibility(View.VISIBLE);
-                ownGif.setVisibility(View.INVISIBLE);
-            case 3:
-                ownGif4.setVisibility(View.VISIBLE);
-                ownGif.setVisibility(View.INVISIBLE);
-            default:
+            if( name.equals("Charizard"))
                 ownGif.setVisibility(View.VISIBLE);
-        }*/
+            else if ( name.equals("Greninja"))
+                ownGif2.setVisibility(View.VISIBLE);
+            else if ( name.equals("Sceptile"))
+                ownGif3.setVisibility(View.VISIBLE);
+            else if ( name.equals("Luxray"))
+                ownGif4.setVisibility(View.VISIBLE);
+            else
+                System.out.println("Why");
+
 
         move1Btn = findViewById(R.id.move1Btn);
         move2Btn = findViewById(R.id.move2Btn);

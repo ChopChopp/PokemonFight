@@ -45,38 +45,36 @@ public class ChoosePokemon extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                goToFighting(pkmnlist.get(0).getId());
+                goToFighting(pkmnlist.get(0).getName());
             }   
         });
         cl2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                goToFighting( pkmnlist.get(0).getId());
+                goToFighting( pkmnlist.get(1).getName());
             }
         });
         cl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                goToFighting( pkmnlist.get(0).getId());
+                goToFighting( pkmnlist.get(2).getName());
             }
         });
         cl4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                goToFighting(pkmnlist.get(0).getId());
+                goToFighting(pkmnlist.get(3).getName());
             }
         });
-
-
-
     }
 
-    public void goToFighting(long id) {
+    public void goToFighting(String name) {
         Intent intent = new Intent(this, FightActivity.class);
+        intent.putExtra("name", name);
+        System.out.println("The Id is: " +intent.getExtras());
         startActivity(intent);
-//        intent.putExtra("id", id);
     }
 }
